@@ -3,5 +3,15 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+
+    itemsStr = []
+    for i in items:
+        itemsStr.append(str(i))
+
+    for i in itemsStr:
+        count = itemsStr.count(i)
+        print(count)
+        frequencies[i] = count
+
+
     return frequencies
